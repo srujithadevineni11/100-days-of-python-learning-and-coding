@@ -1,0 +1,563 @@
+
+Day-2
+
+
+* Operators
+
+X=a+b this is an expression 
++ = are operators 
+X a b are operands
+
+* Arithmetic Operators
+
+Arithmetic operators are used to perform common mathematical operations.
+Operator	Name	Description	Example	Try it
++	Addition	Adds together two values	x + y	Try it »
+-	Subtraction	Subtracts one value from another	x - y	Try it »
+*	Multiplication	Multiplies two values	x * y	Try it »
+/	Division	Divides one value by another	x / y	Try it »
+%	Modulus	Returns the division remainder	x % y	Try it »
+++	Increment	Increases the value of a variable by 1	++x	Try it »
+--	Decrement	Decreases the value of a variable by 1	--x	
+* Assignment Operators
+
+Assignment operators are used to assign values to variables.
+In the example below, we use the assignment operator (=) to assign 
+A list of all assignment operators:
+Operator	Example	Same As	Try it
+=	x = 5	x = 5	Try it »
++=	x += 3	x = x + 3	Try it »
+-=	x -= 3	x = x - 3	Try it »
+*=	x *= 3	x = x * 3	Try it »
+/=	x /= 3	x = x / 3	Try it »
+%=	x %= 3	x = x % 3	Try it »
+&=	x &= 3	x = x & 3	Try it »
+|=	x |= 3	x = x | 3	Try it »
+^=	x ^= 3	x = x ^ 3	Try it »
+>>=	x >>= 3	x = x >> 3	Try it »
+<<=	x <<= 3	x = x << 3	
+* Comparison Operators
+
+A list of all comparison operators:
+Operator	Name	Example	Try it
+==	Equal to	x == y	Try it »
+!=	Not equal	x != y	Try it »
+>	Greater than	x > y	Try it »
+<	Less than	x < y	Try it »
+>=	Greater than or equal to	x >= y	Try it »
+<=	Less than or equal to	x <= y	Try it »
+* Logical Operators
+
+Logical operators are used to determine the logic between variables or values:
+Operator	Name	Description	Example	Try it
+&&	Logical and	Returns true if both statements are true	x < 5 &&  x < 10	Try it »
+||	Logical or	Returns true if one of the statements is true	x < 5 || x < 4	Try it »
+!	Logical not	Reverse the result, returns false if the result is true		
+
+* Identity Operators
+
+is and is not are the identity operators both are used to check if two values are located on the same part of the memory. Two variables that are equal do not imply that they are identical. 
+is          True if the operands are identical 
+is not      True if the operands are not identical 
+
+
+* Membership Operators
+
+in and not in are the membership operators; used to test whether a value or variable is in a sequence.
+in            True if value is found in the sequence
+not in        True if value is not found in the sequence
+
+*  Bitwise operators =(&,|,left shit <<,right shift>>,^,~)
+
+We cant apply on double and float and negative numbers 
+
+￼
+If we take a=10 and b=5 
+In Bitwise and (&)
+A&b=10&5 
+That means 1 2 4 8 16 32 
+                      0 1 0 1.   (Keept 1 at 8 and 2 beacause adding those two gives 10 and kept 0 beacuse numbers are not used)
+                      1 0 1 0
+Using and or xor logic tables we perform the operations and if final output is 0 then answer is zero if the answer is 1 then  sum the numbers whose output is 1  
+
+<< :- left shift 
+
+Var<< 2
+ int a=10 
+c=a<<2
+
+Shortcut is 10*2 power 2 =40 10*2power4=160
+
+
+>> :-right shift 
+var>>2
+Int a=10
+c=a>>2
+Shortcut is 10/2power4 =0.. so 0  10/2power2=2…so 2
+
+~:-bitwise not 
+Int a=5;
+b=~a;
+
+
+
+1) Arithmetic operators
+● +, -, *, /, %(modulus), **(power), //(floor)
+5%4=1 6%4=2 floor 5%4=1 ceil 5%4=2
+
+2) Assignment operators
+● =, +=, -=, *=, /=, %=,//= and so on
+
+3) Comparison operators
+● >, <, >=, <=, ==, !=
+The result is always boolean (0 or 1)
+
+4) Logical operators (for combing)
+● and, or, not
+
+5) Identity operators
+● is, is not
+
+6) Membership operators
+● in, not in
+
+7) Bitwise operators(they are done on binary forms)
+● &, |, ^, ~, >>, <<
+
+* Precedence and associvity of operators  
+￼
+￼
+￼
+
+* Datatypes
+
+￼
+
+* Numbers
+
+Number stores numeric values. The integer, float, and complex values belong to a Python Numbers data-type.
+
+Python provides the type() function to know the data-type of the variable. 
+
+1. Int - Integer value can be any length such as integers 10, 2, 29, -20, -150 etc. Python has no restriction on the length of an integer. Its value belongs to int
+2. Float - Float is used to store floating-point numbers like 1.9, 9.902, 15.2, etc. It is accurate upto 15 decimal points.
+3. complex - A complex number contains an ordered pair, i.e., x + iy where x and y denote the real and imaginary parts, respectively. The complex numbers like 2.14j, 2.0 + 2.3j, etc.
+
+Coding:
+
+a=3
+b=1.2
+c=3+4j
+print(type(a),type(b),type(c),sep="\n")
+
+Output
+
+<class 'int'>
+<class 'float'>
+<class 'complex'>
+
+
+* Boolean
+
+Boolean type provides two built-in values, True and False. These values are used to determine the given statement true or false. It denotes by the class bool. True can be represented by any non-zero value or 'T' whereas false can be represented by the 0 or 'F'. 
+
+The bool() function allows you to evaluate any value, and give you True or False in return,
+
+Coding:
+
+Example
+
+Evaluate a string and a number:
+print(bool("Hello"))
+print(bool(15))
+#Any string is True, except empty strings.
+#Any number is True, except 0.
+Output
+True
+True
+
+print(type(True),type(False))
+Output
+<class 'bool'> <class 'bool'>
+
+* Sequence
+
+* Strings
+
+String is a collection of charactetrs ,every keyboard letters are strings eg:- ’s@i’
+Strings are written “ ” or ‘ ’ in python
+Strings in python are surrounded by either single quotation marks, or double quotation marks.or triple quotation mark
+'hello' is the same as "hello".
+We can display a string literal with the print() function:
+
+- We can assign a multiline string to a variable by using three quotes:
+- Strings(eg:-“HELLO” , ”srujitha”)
+
+Coding:
+
+print(“hello[0]”)
+Output: h
+
+
+Print(“123”+”456”)
+Output:123456
+//the difference between the above and the below code is the above code is written in between “” quotes ,so it is a string , string concatenation is happening there .
+//but in the below program numbers are not in btw “” so addition operation is performed
+Print(123+345)
+Output 468
+
+ print(“hello”+”world”)
+Output:helloworld
+
+
+#You can use three double quotes:
+a = """Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua."""
+print(a)
+
+Output
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,sed 
+do eiusmod tempor incididuntut 
+labore et dolore magna aliqua.
+
+- Square brackets can be used to access elements of the string.
+Example
+Get the character at position 1 (remember that the first character has the position 0):
+a = "Hello, World!"
+print(a[1])
+print(a[-1])
+
+Output
+e
+d
+
+- The len() function returns the length of a string:
+Example
+a = "Hello, World!"
+print(len(a))
+
+- To check if a certain phrase or character is present in a string, we can use the keyword in.
+Example
+Check if "free" is present in the following text:
+txt = "The best things in life are free!"
+print("free" in txt)
+
+- Specify the start index and the end index, separated by a colon, to return a part of the string.
+Example
+Get the characters from position 2 to position 5 (not included):
+b = "Hello, World!"
+print(b[2:5])
+
+- Slice From the Start
+By leaving out the start index, the range will start at the first character:
+Example
+Get the characters from the start to position 5 (not included):
+b = "Hello, World!"
+print(b[:5])
+
+- Slice To the End
+By leaving out the end index, the range will go to the end:
+Example
+Get the characters from position 2, and all the way to the end:
+b = "Hello, World!"
+print(b[2:])
+
+- Upper Case
+Example
+The upper() method returns the string in upper case:
+a = "Hello, World!"
+print(a.upper())
+
+- Lower Case
+Example
+The lower() method returns the string in lower case:
+a = "Hello, World!"
+print(a.lower())
+
+- Remove Whitespace
+Whitespace is the space before and/or after the actual text, and very often you want to remove this space.
+Example
+The strip() method removes any whitespace from the beginning or the end:
+a = " Hello, World! "
+print(a.strip()) # returns "Hello, World!"
+
+- Replace String
+Example
+The replace() method replaces a string with another string:
+a = "Hello, World!"
+print(a.replace("H", "J"))
+
+Method	Description
+capitalize()	Converts the first character to upper case
+casefold()	Converts string into lower case
+center()	Returns a centered string
+count()	Returns the number of times a specified value occurs in a string
+encode()	Returns an encoded version of the string
+endswith()	Returns true if the string ends with the specified value
+expandtabs()	Sets the tab size of the string
+find()	Searches the string for a specified value and returns the position of where it was found
+format()	Formats specified values in a string
+format_map()	Formats specified values in a string
+index()	Searches the string for a specified value and returns the position of where it was found
+isalnum()	Returns True if all characters in the string are alphanumeric
+isalpha()	Returns True if all characters in the string are in the alphabet
+isdecimal()	Returns True if all characters in the string are decimals
+isdigit()	Returns True if all characters in the string are digits
+isidentifier()	Returns True if the string is an identifier
+islower()	Returns True if all characters in the string are lower case
+isnumeric()	Returns True if all characters in the string are numeric
+isprintable()	Returns True if all characters in the string are printable
+isspace()	Returns True if all characters in the string are whitespaces
+istitle()	Returns True if the string follows the rules of a title
+isupper()	Returns True if all characters in the string are upper case
+join()	Joins the elements of an iterable to the end of the string
+ljust()	Returns a left justified version of the string
+lower()	Converts a string into lower case
+lstrip()	Returns a left trim version of the string
+maketrans()	Returns a translation table to be used in translations
+partition()	Returns a tuple where the string is parted into three parts
+replace()	Returns a string where a specified value is replaced with a specified value
+rfind()	Searches the string for a specified value and returns the last position of where it was found
+rindex()	Searches the string for a specified value and returns the last position of where it was found
+rjust()	Returns a right justified version of the string
+rpartition()	Returns a tuple where the string is parted into three parts
+rsplit()	Splits the string at the specified separator, and returns a list
+rstrip()	Returns a right trim version of the string
+split()	Splits the string at the specified separator, and returns a list
+splitlines()	Splits the string at line breaks and returns a list
+startswith()	Returns true if the string starts with the specified value
+strip()	Returns a trimmed version of the string
+swapcase()	Swaps cases, lower case becomes upper case and vice versa
+title()	Converts the first character of each word to upper case
+translate()	Returns a translated string
+upper()	Converts a string into upper case
+zfill()	Fills the string with a specified number of 0 values at the beginning
+
+￼
+
+* Number manupalations
+
+Round function
+
+the number is rounded to its nearest even integer. For example, if we need to round off 7.5, it will be rounded off to its nearest even integer, 8. But if we need to round off 6.5, it will be rounded off to 6 as it is closer to 6.
+
+Coding:
+
+print(round(7.5))
+print(round(6.5))
+print(round(2.6666))
+print(round(2.6666,2))
+
+Output
+
+8
+6
+3
+2.67
+
+print(round(8/3,2))
+Output: 2.67
+
+print(round(2.66666666666,2))
+Output: 2.67
+
+print(8//3)
+Output: 2
+
+* Formatting method
+
+String formatting 
+
+String formatting is the process of infusing things in the string dynamically and presenting the string. 
+
+There are four different ways to perform string formatting in Python:
+* Formatting with % Operator.
+* Formatting with format() string method.
+* Formatting with string literals, called f-strings.
+* Formatting with String Template Class
+
+
+Method 1: Formatting string using % Operator
+
+It is the oldest method of string formatting. Here we use the modulo % operator. The modulo % is also known as the “string-formatting operator”.
+
+Syntax
+
+"{:.f}".format(variable name)
+“%.f”%variablename
+
+Coding:
+
+print('Joe stood up and %s to the crowd.'   %'spoke')
+print('There are %d dogs.'  %4)
+
+Joe stood up and spoke to the crowd.
+There are 4 dogs.
+
+Float precision with the placeholder method
+
+Floating-point numbers use the format %a.bf. Here, a would be the minimum number of digits to be present in the string; these might be padded with white space if the whole number doesn’t have this many digits. Close to this, bf represents how many digits are to be displayed after the decimal point. 
+
+print('The value of pi is: %5.4f' %(3.141592))
+Output
+The value of pi is: 3.1416
+
+Method 2: Formatting string using format() method
+
+Format() method was introduced with Python3 for handling complex string formatting more efficiently. Formatters work by putting in one or more replacement fields and placeholders defined by a pair of curly braces { } into a string and calling the str.format(). The value we wish to put into the placeholders and concatenate with the string passed as parameters into the format function. 
+
+Syntax: ‘String here {} then also {}’.format(‘something1′,’something2’)
+
+The format() method allows you to format selected parts of a string.
+Sometimes there are parts of a text that you do not control, maybe they come from a database, or user input?
+To control such values, add placeholders (curly brackets {}) in the text, and run the values through the format() method:
+
+- The format() method takes the passed arguments, formats them, and places them in the string where the placeholders {} 
+
+Example
+
+Use the format() method to insert numbers into strings:
+age = 36
+txt = "My name is John, and I am {}"
+print(txt.format(age))
+
+age =36
+txt ="My name is John, and I am {}".format(age)
+print(txt)
+
+The above both codes give the same output
+
+Output
+My name is John, and I am 36
+
+- The format() method takes unlimited number of arguments, and are placed into the respective placeholders:
+
+Example
+
+quantity = 3
+itemno = 567
+price = 49.95
+myorder = "I want {} pieces of item {} for {} dollars."
+print(myorder.format(quantity, itemno, price))
+
+Output
+I want 3 pieces of item 567 for 49.95 dollars.
+
+Also, if you want to refer to the same value more than once, use the index number:
+
+Example
+
+age = 36
+name = "John"
+txt = "His name is {1}. {1} is {0} years old."
+print(txt.format(age, name))
+
+OUTPUT
+His name is John. John is 36 years old.
+
+print('{2} {1} {0}'.format('directions','the', 'Read'))
+Output
+Read the directions
+
+* We can insert objects by using assigned keywords:
+* 
+print('a: {a}, b: {b}, c: {c}'.format(a = 1,b = 'Two',c = 12.3))
+
+Output:
+a: 1, b: Two, c: 12.3
+
+* We can reuse the inserted objects to avoid duplication:
+
+
+print('The first {p} was alright, but the {p} {p} was tough.'.format(p = 'second'))
+
+Output:
+The first second was alright, but the second second was tough. 
+
+Float precision with the.format() method:
+
+Syntax: {[index]:[width][.precision][type]}
+
+The type can be used with format codes:
+
+* ‘d’ for integers
+* ‘f’ for floating-point numbers
+* ‘b’ for binary numbers
+* ‘o’ for octal numbers
+* ‘x’ for octal hexadecimal numbers
+* ‘s’ for string
+* ‘e’ for floating-point in an exponent format
+
+print('The valueof pi is: {0:1.5f}'.format(3.141592))
+Output
+The valueof pi is: 3.14159
+
+
+Note : F-strings are faster than the two most commonly used string formatting mechanisms, which are % formatting and str.format().    
+* Method 3: Formatted String using F-strings
+
+* PEP 498 introduced a new string formatting mechanism known as Literal String Interpolation or more commonly as F-strings (because of the leading f character preceding the string literal). The idea behind f-strings is to make string interpolation simpler.
+* To create an f-string, prefix the string with the letter “ f ”. The string itself can be formatted in much the same way that you would with str.format(). F-strings provide a concise and convenient way to embed python expressions inside string literals for formatting.
+
+Coding:
+
+score=0
+height=1.8
+weight=True
+print(f"your score is :{score},your weight is : {weight},your height is: {height}")
+
+Float precision in the f-String method:
+
+Syntax: {value:{width}.{precision}}
+
+Example: Float Precision using F-strings
+
+num = 3.14159
+ 
+print(f"The valueof pi is: {num:{1}.{5}}")
+Output
+
+Backslash Cannot be used in format string directly.
+f"newline: {ord('\n')}"
+Output
+An error is generated
+We can do like this
+
+newline ='\n'
+print(f"newline: {newline}yes done")
+Output
+
+newline: 
+yes done
+
+value=10
+newline ='\n'
+print(f"newline: {value}{newline}yes done")
+
+Output
+newline: 10
+yes done
+
+Method-4 is a bit confusing .
+
+Program to demonstrate above learned thingings 
+
+Eg:-
+x,y=map(int,input("enter two numbers: ").split())
+print(x)
+print(y)
+w=x/y
+z=round(x/y)
+c="%.2f"%w
+print(f"normal division : {w}\nnormal division with round function : {z}\ndivision with place holders : {c} \n ")
+
+Output:-
+enter two numbers: 1 4
+1
+4
+normal division : 0.25
+normal division with round function : 0
+division with place holders : 0.25 
